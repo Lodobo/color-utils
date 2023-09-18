@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "color-utils"
+version = "0.1.0"
+description = ""
+authors = ["lodobo <lodobo303@gmail.com>"]
+readme = "README.md"
+
+packages = [
+  {include = "color_utils"}
+]
+
+[tool.poetry.scripts]
+base16-convert = "color_utils.main:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0.1"
+argparse = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
